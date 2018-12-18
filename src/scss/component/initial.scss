@@ -1,0 +1,258 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Microsoft Jhenghei", "微軟正黑體", \5FAE\8EDF\6B63\9ED1\9AD4, Verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:none;
+    @include font_rwd;
+    line-height: 1.7em;
+}
+
+a img {
+    border: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+}
+
+.edit_style {
+    padding: 2em 0;
+    max-width: 1300px;
+    margin: auto;
+    @include font_rwd;
+
+    img {
+        max-width: 100%;
+        height: auto !important;
+    }
+
+    * {
+        max-width: 100%;
+    }
+
+    table {
+        display: block;
+    }
+
+    table thead,
+    table tbody,
+    table tfoot {
+        display: table;
+        width: 100%;
+    }
+
+    &::after {
+        content: '';
+        clear: both;
+    }
+
+    a{
+        color: #0054AF;
+
+        &:link {
+            text-decoration: underline;
+        }
+
+        &:visited {
+            text-decoration: underline;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        -webkit-padding-start:40px;
+
+        li {
+            list-style:disc;
+        }
+    }
+
+    ol {
+        -webkit-padding-start:40px;
+
+        li {
+            list-style:decimal;
+        }
+    }
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline-style: none;
+    box-shadow: none;
+    //border-radius: 0;
+}
+
+div {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table {
+    display: table;
+    width: 100%;
+    background-color: transparent;
+}
+
+tr {
+    display: table-row;
+    width: 100%;
+    line-height: 36px;
+}
+
+td {
+    display: table-cell;
+}
+
+.invalid {
+    border: 1px solid #F00;
+    background: #FF9;
+}
+
+.notify {
+    margin: 0 0 0 5px;
+    font-size: 10px;
+    color: #F00;
+}
+
+.iframe-rwd {
+    position: relative;
+    padding-bottom: 65.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.max_width {
+    max-width: 1300px;
+    margin: auto;
+}
+
+/*滑入動畫*/
+.slide-in {
+    opacity: 0;  
+    transition: all .5s;  
+    transform: translateX(-30%) scale(0.95);
+
+    &.slide-left {
+        opacity: 0;  
+        transition: all .5s;  
+        transform: translateX(30%) scale(0.95);
+    }
+
+    &.slide-up {
+        opacity: 0;  
+        transition: all .5s;  
+        transform: translateY(30%) scale(0.95);
+    }
+
+    &.active {
+        opacity: 1;  
+        transform: translateX(0%) scale(1);
+    }
+
+    &.slide-up.active {
+        opacity: 1;  
+        transform: translateY(0%) scale(1);
+    }
+}
+
+.fp-controlArrow.fp-next{
+    @include sm-width{
+        border-width: 25px 0 25px 20px;
+        right: 5px;
+    }
+    border-color: transparent transparent transparent #777;
+}
+
+.fp-controlArrow.fp-prev{
+    @include sm-width{
+        border-width: 25px 20px 25px 0;
+        left: 5px;
+    }
+    border-color: transparent #777 transparent transparent;
+}
+
+.slick-prev{
+    left: -5%;
+
+    &::before{
+        content:'';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 20px 25px 0;
+        border-color: transparent #777777 transparent transparent;
+        font-size: 0;
+        display: block;
+        @include md-width{
+            border-width: 38.5px 35px 38.5px 0;
+        }
+    }
+}
+.slick-next{
+    right: -3.5%;
+
+    &::before{
+        content:'';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 0 25px 20px;
+        border-color: transparent transparent transparent #777777;
+        font-size: 0;
+        display: block;
+        @include md-width{
+            border-width: 38.5px 0 38.5px 35px;
+        }
+    }
+}

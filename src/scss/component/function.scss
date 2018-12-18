@@ -1,0 +1,120 @@
+$pc-media: 1024px;
+$pcs-media: 1023px;
+$md-media: 768px;
+$mds-media: 767px;
+$m-media: 480px;
+$ms-media: 479px;
+
+$max-width: 1300px;
+$width_full: 100%;
+
+//電腦
+@mixin pc-width {
+    @media all and (min-width: $pc-media) {
+        @content;
+    }
+}
+
+//小螢幕電腦
+@mixin md-width {
+    @media all and (min-width: $md-media) {
+        @content;
+    }
+}
+
+//大平板
+@mixin sms-width {
+    @media all and (max-width: $pcs-media) {
+        @content;
+    }
+}
+
+//平板
+@mixin sm-width {
+    @media all and (max-width: $mds-media) {
+        @content;
+    }
+}
+
+//手機
+@mixin xs-width {
+    @media all and (max-width: $ms-media) {
+        @content;
+    }
+}
+
+@mixin inline_block_middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@mixin inline_block($inline_width: auto, $inline_vertical: middle) {
+    display: inline-block;
+    vertical-align: $inline_vertical;
+    width: $inline_width;
+    box-sizing: border-box;
+}
+
+@mixin button_initial {
+    text-align: center;
+    padding: 8px 3px;
+    color: #FFF;
+    font-size: 1em;
+    border: 0;
+    width: 110px;
+    vertical-align: middle;
+
+    @include sm-width {
+        font-size: 0.9em;
+    }
+}
+
+@mixin bg_img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin simple_txt{
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+@mixin font_rwd{
+    @include md-width{
+        font-size: 16px;
+    }
+    @include sm-width{
+        font-size: 14px;
+    }
+}
+
+@mixin round_txt($round_color: #777,$r:auto) {
+    width: $r;
+    height: $r;
+    line-height: $r;
+    border-radius: 50%;
+    background-color: $round_color;
+    text-align: center;
+}
+
+@mixin title_txt($title_type: detail) {
+    @if $title_type == 'lg_title' {
+        color: $main_color;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0 0 4px rgba(0,0,0,0.5);
+    }
+    @else if $title_type == 'detail' {
+        color: #FFF;
+        font-size: 16px;
+    }
+}
+
+@mixin max_width($max: $max_width) {
+    max-width: $max;
+    margin-left: auto;
+    margin-right: auto;
+}

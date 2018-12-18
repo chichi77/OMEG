@@ -1,0 +1,24 @@
+$red: $second_color;
+$warning: $main_color;
+$secondary: #CCC;
+$green: #77CE00;
+
+$input-color: #333;
+$input-padding-x: 0.4rem;
+$input-bg: rgba(#FFF,0.5);
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/images";
+
+.btn-warning{
+	color: #FFF;
+}
