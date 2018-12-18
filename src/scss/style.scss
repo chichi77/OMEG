@@ -5,3 +5,290 @@
 
 @import "component/custom.scss";
 
+body{
+  height: 100vh;
+  background-color: #846b57; // Old browsers
+  @include filter-gradient(#846b57, #352a22, horizontal); // IE6-9 fallback on horizontal gradient
+  @include background-image(radial-gradient(center, ellipse cover, #846b57 0%,#352a22 100%));
+  background-attachment: fixed;
+  color: #FFF;
+  font-size: 16px;
+  @include bg_img;
+  background-image: url('../img/bg-01.jpg');
+}
+
+input,
+select,
+textarea,
+button{
+  // background-color: rgba(255,255,255,0.5);
+  // padding: 7px;
+  // border-radius: 5px;
+  // border: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Jhenghei", "微軟正黑體", \5FAE\8EDF\6B63\9ED1\9AD4, Verdana, Arial, Helvetica, sans-serif;
+}
+
+input[type="file"]{
+  background-color: transparent;
+  padding: 7px 0;
+}
+
+.form_btn{
+  padding-top: 30px;
+  text-align: center;
+
+  .btn{
+    margin-right: 10px;
+    min-width: 90px;
+
+    &:nth-last-child(1){
+      margin-right: 0;
+    }
+  }
+}
+
+.invalid{
+  box-shadow: none;
+  border-color: red;
+  background-color: rgba(#FFFA93, 0.5);
+}
+
+.page_wrapper{
+  @include max_width(768px);
+}
+
+.page{
+  padding: 30px 5%;
+}
+
+.label{
+  background-color: #777;
+  color: #FFF;
+  padding: 3px 7px;
+  border-radius: 3px;
+  @include inline_block;
+  margin-right: 5px;
+}
+
+.postForm{
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  textarea{
+    width: 100%;
+  }
+
+  .row{
+    padding: 10px 0;
+  }
+
+  input.code_input{
+    width: 100px;
+  }
+
+  .code_img{
+    width: 70px;
+    padding-right: 10px;
+  }
+}
+
+.red_txt{
+  color: $fourth_color;
+}
+
+.tip_txt{
+  font-size: 14px;
+  padding: 10px 0;
+  color: $main_color;
+}
+
+.label_txt{
+  padding: 3px 7px;
+  background-color: $main_color;
+  margin-bottom: 20px;
+}
+
+.yellow_txt{
+  color: $third_color;
+}
+
+.main_color_txt{
+  color: $main_color;
+}
+
+.tip_txt_block{
+  border: 1px #CCC solid;
+  padding: 10px 15px;
+  color: #CCC;
+  margin: 10px 0 30px 0;
+}
+
+.circle_bg{
+  @include bg_img;
+  border-radius: 50%;
+  padding-bottom: 100%;
+}
+
+.title_img{
+  @include bg_img;
+  background-image: url('../img/title_contact.jpg');
+  padding: 14% 5%;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.page_tite{
+  @include title_txt(lg_title);
+  padding-bottom: 30px;
+}
+
+.img_title{
+  padding: 20px 0;
+
+  [class*="col-"]{
+    align-self: center;
+  }
+
+  .title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+
+  .fa-map-marker-alt{
+    color: $main_color;
+    margin-right: 7px;
+  }
+}
+
+.middle_page{
+  display: table;
+  width: 100%;
+  height: 100vh;
+
+  >div{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.m_menu{
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 30px;
+
+  .svg-inline--fa{
+    font-size: 26px;
+  }
+
+  .col-3{
+    padding-right: 3px;
+    padding-left: 3px;
+
+    &.active{
+      background-color: $bg_color;
+    }
+  }
+
+  a{
+    display: block;
+    padding: 15px 5px 10px 5px;
+    border: 1px #FFF solid;
+    text-decoration: none;
+  }
+}
+
+.edu_item{
+  padding-bottom: 30px;
+
+  .title{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+}
+
+.case_wrapper{
+  padding: 20px 0;
+
+  .item{
+    padding: 0 0 5px 15px;
+    border-left: 3px $fifth_color solid;
+    margin-bottom: 40px;
+    display: none;
+
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+  }
+
+  .img-fluid{
+    padding-top: 10px;
+  }
+}
+
+.state{
+  padding: 10px 0 20px 0;
+}
+
+.state_menu{
+  padding-bottom: 10px;
+
+  >div{
+    border-bottom: 1px #FFF solid;
+    padding-bottom: 7px;
+
+    &.active{
+      color: $third_color;
+      border-bottom: 3px $third_color solid;
+      font-weight: bold;
+      margin-bottom: -1px;
+    }
+  }
+}
+
+.state_bar{
+  height: 6px;
+  background-color: $secondary;
+  border-radius: 3px;
+
+  >div{
+    height: 6px;
+    border-radius: 3px;
+    width: 0;
+  }
+
+  &.green{
+    >div{
+      background-color: $green;
+    }
+  }
+
+  &.blue{
+    >div{
+      background-color: $blue;
+      width: 100% !important;
+    }
+  }
+}
+
+.company_list{
+  >li{
+    padding-bottom: 10px;
+
+    >span{
+      text-decoration: underline;
+    }
+  }
+
+  .svg-inline--fa{
+    color: $main_color;
+    margin-right: 5px;
+  }
+}
