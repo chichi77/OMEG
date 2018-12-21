@@ -57,7 +57,12 @@
 					<label for="photo">報修照片</label>
 				</div>
 				<div class="col-8 col-sm-8">
-					<input name="photo" type="file" class="form-control-file">
+					<input name="photo_1" type="file" accept="image/*" value="" class="form-control-file" target="uploadIframe">
+					<div class="preview"></div>
+					<input name="photo_2" type="file" accept="image/*" value="" class="form-control-file" target="uploadIframe">
+					<div class="preview"></div>
+					<input name="photo_3" type="file" accept="image/*" value="" class="form-control-file" target="uploadIframe">
+					<div class="preview"></div>
 				</div>
 			</div>
 			<div class="row">
