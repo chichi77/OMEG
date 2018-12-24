@@ -25,20 +25,20 @@
 			<div class="row">
 				<div class="col-4 col-sm-4 col-form-label">
 					<span class="red_txt">*</span>
-					<label for="account">帳號</label>
+					<label for="acc">帳號</label>
 				</div>
 				<div class="col-8 col-sm-8">
-					<input type="text" class="required form-control" placeholder="請輸入手機號碼">
+					<input type="text" name="acc" id="acc" class="required form-control" placeholder="請輸入手機號碼">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-4 col-sm-4 col-form-label">
 					<span class="red_txt">*</span>
-					<label for="detail">驗證碼</label>
+					<label for="code">驗證碼</label>
 				</div>
 				<div class="col-8 col-sm-8 form-inline">
 					<img class="code_img" src="dist/img/code.jpg">
-					<input type="text" class="required form-control code_input">
+					<input type="text" name="code" id="code" class="required form-control code_input">
 				</div>
 			</div>
 			<div class="form_btn">

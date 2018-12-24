@@ -28,7 +28,7 @@
 					<label for="case">申報建案</label>
 				</div>
 				<div class="col-8 col-sm-8">
-					<select name="case" class="form-control required">
+					<select name="case" id="case" class="form-control required">
 						<option value="0">里港開市大吉-戶號13F-2</option>
 						<option value="1">林邊森粼-戶號5F-1</option>
 					</select>
@@ -40,7 +40,7 @@
 					<label for="repair_type">維修項目</label>
 				</div>
 				<div class="col-8 col-sm-8">
-					<select name="repair_type" class="form-control required">
+					<select name="repair_type" id="repair_type" class="form-control required">
 						<option value="0">水電類</option>
 						<option value="1">弱電類</option>
 						<option value="3">衛浴類</option>
@@ -54,14 +54,14 @@
 			</div>
 			<div class="row">
 				<div class="col-4 col-sm-4 col-form-label">
-					<label for="photo">報修照片</label>
+					<label>報修照片</label>
 				</div>
 				<div class="col-8 col-sm-8">
-					<input name="photo_1" type="file" accept="image/*" value="" class="form-control-file" target="uploadIframe">
+					<input name="photo_1" id="photo_1" type="file" accept="image/*" value="" class="form-control-file" target="uploadIframe">
 					<div class="preview"></div>
-					<input name="photo_2" type="file" accept="image/*" value="" class="form-control-file" target="uploadIframe">
+					<input name="photo_2" id="photo_2" type="file" accept="image/*" value="" class="form-control-file" target="uploadIframe">
 					<div class="preview"></div>
-					<input name="photo_3" type="file" accept="image/*" value="" class="form-control-file" target="uploadIframe">
+					<input name="photo_3" id="photo_3" type="file" accept="image/*" value="" class="form-control-file" target="uploadIframe">
 					<div class="preview"></div>
 				</div>
 			</div>
@@ -70,17 +70,17 @@
 					<label for="detail">報修備註</label>
 				</div>
 				<div class="col-8 col-sm-8">
-					<textarea name="detail" rows="5" placeholder="詳細敘述報修狀況"  class="form-control"></textarea>
+					<textarea name="detail" id="datail" rows="5" placeholder="詳細敘述報修狀況"  class="form-control"></textarea>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-4 col-sm-4 col-form-label">
 					<span class="red_txt">*</span>
-					<label for="detail">驗證碼</label>
+					<label for="code">驗證碼</label>
 				</div>
 				<div class="col-8 col-sm-8 form-inline">
 					<img class="code_img" src="dist/img/code.jpg">
-					<input type="text" class="form-control code_input required">
+					<input type="text" name="code" id="code" class="form-control code_input required">
 				</div>
 			</div>
 			<div class="form_btn">

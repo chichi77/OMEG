@@ -30,7 +30,7 @@
 			<ul class="item" data-type="0">
 				<li>
 					<span class="main_color_txt">2018-11-01</span>
-					<span class="text-secondary">編號：20181101164532</span>
+					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
 					<div class="state_bar">
@@ -39,7 +39,7 @@
 					<div class="state_txt text-secondary">未處理</div>
 				</li>
 				<li>
-					<div class="row">
+					<div class="row no-gutters">
 						<div class="col-4 col-sm-4 main_color_txt">報修建案</div>
 						<div class="col-8 col-sm-8">樂見（戶號13F-2）</div>
 						<div class="col-4 col-sm-4 main_color_txt">維修項目</div>
@@ -56,7 +56,7 @@
 			<ul class="item" data-type="1">
 				<li>
 					<span class="main_color_txt">2018-11-01</span>
-					<span class="text-secondary">編號：20181101164532</span>
+					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
 					<div class="state_bar green">
@@ -66,7 +66,7 @@
 					<div class="text-secondary">維修排程：2018/11/05~2018/11/15</div>
 				</li>
 				<li>
-					<div class="row">
+					<div class="row no-gutters">
 						<div class="col-4 col-sm-4 main_color_txt">報修建案</div>
 						<div class="col-8 col-sm-8">樂見（戶號13F-2）</div>
 						<div class="col-4 col-sm-4 main_color_txt">維修項目</div>
@@ -83,7 +83,7 @@
 			<ul class="item" data-type="1">
 				<li>
 					<span class="main_color_txt">2018-11-01</span>
-					<span class="text-secondary">編號：20181101164532</span>
+					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
 					<div class="state_bar green">
@@ -108,7 +108,7 @@
 			<ul class="item" data-type="2">
 				<li>
 					<span class="main_color_txt">2018-11-01</span>
-					<span class="text-secondary">編號：20181101164532</span>
+					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
 					<div class="state_bar green">
@@ -118,7 +118,7 @@
 					<div class="text-secondary">維修排程：2018/11/05~2018/11/15</div>
 				</li>
 				<li>
-					<div class="row">
+					<div class="row no-gutters">
 						<div class="col-4 col-sm-4 main_color_txt">報修建案</div>
 						<div class="col-8 col-sm-8">樂見（戶號13F-2）</div>
 						<div class="col-4 col-sm-4 main_color_txt">維修項目</div>
@@ -133,7 +133,7 @@
 			<ul class="item" data-type="2">
 				<li>
 					<span class="main_color_txt">2018-11-01</span>
-					<span class="text-secondary">編號：20181101164532</span>
+					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
 					<div class="state_bar green">
@@ -143,7 +143,7 @@
 					<div class="text-secondary">維修排程：2018/11/05~2018/11/15</div>
 				</li>
 				<li>
-					<div class="row">
+					<div class="row no-gutters">
 						<div class="col-4 col-sm-4 main_color_txt">報修建案</div>
 						<div class="col-8 col-sm-8">樂見（戶號13F-2）</div>
 						<div class="col-4 col-sm-4 main_color_txt">維修項目</div>
@@ -158,7 +158,7 @@
 			<ul class="item" data-type="3">
 				<li>
 					<span class="main_color_txt">2018-11-01</span>
-					<span class="text-secondary">編號：20181101164532</span>
+					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
 					<div class="state_bar blue">
@@ -167,7 +167,7 @@
 					<div class="state_txt text-primary">已完成</div>
 				</li>
 				<li>
-					<div class="row">
+					<div class="row no-gutters">
 						<div class="col-4 col-sm-4 main_color_txt">報修建案</div>
 						<div class="col-8 col-sm-8">樂見（戶號13F-2）</div>
 						<div class="col-4 col-sm-4 main_color_txt">維修項目</div>
