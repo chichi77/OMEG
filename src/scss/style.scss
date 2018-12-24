@@ -96,10 +96,6 @@ input[type="file"]{
   }
 }
 
-.red_txt{
-  color: $fourth_color;
-}
-
 .tip_txt{
   font-size: 14px;
   padding: 10px 0;
@@ -114,6 +110,10 @@ input[type="file"]{
 
 .yellow_txt{
   color: $third_color;
+}
+
+.red_txt{
+  color: $fourth_color;
 }
 
 .main_color_txt{
@@ -131,6 +131,15 @@ input[type="file"]{
   @include bg_img;
   border-radius: 50%;
   padding-bottom: 100%;
+}
+
+.fixed_bottom{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: #231F1C;
 }
 
 .title_img{
@@ -190,8 +199,10 @@ input[type="file"]{
   .col-3{
     padding-right: 3px;
     padding-left: 3px;
+  }
 
-    &.active{
+  .active{
+    a{
       background-color: $bg_color;
     }
   }
@@ -223,13 +234,17 @@ input[type="file"]{
     margin-bottom: 40px;
     display: none;
 
-    &:nth-last-child(1){
-      margin-bottom: 0;
+    &.active{
+      display: block;
     }
   }
 
   .img-fluid{
     padding-top: 10px;
+  }
+
+  a{
+    text-decoration: none;
   }
 }
 
@@ -262,6 +277,7 @@ input[type="file"]{
     height: 6px;
     border-radius: 3px;
     width: 0;
+    transition: width 0.5s;
   }
 
   &.green{
@@ -290,5 +306,43 @@ input[type="file"]{
   .svg-inline--fa{
     color: $main_color;
     margin-right: 5px;
+  }
+}
+
+.adm_menu{
+  >div{
+    padding: 10px 5px;
+
+  }
+
+  .active{
+    a{
+      background-color: $bg_color;
+    }
+  }
+
+  a{
+    display: block;
+    padding: 10px 5px;
+    border: 1px #FFF solid;
+    text-decoration: none;
+  }
+
+  .svg-inline--fa{
+    margin-right: 5px;
+  }
+}
+
+.adm_repair_form{
+  padding: 5px 5%;
+  background: rgba(#FFF,0.2);
+
+  input[type="date"]{
+    width: calc(100% - 11.5px);
+    font-size: 14px;
+  }
+
+  input[type="number"]{
+    width: 100px;
   }
 }
