@@ -67,6 +67,9 @@
 					</select>
 				</div>
 			</div>
+			<div class="row no-gutters">
+				<textarea name="memo" id="memo" rows="6" class="form-control px-2" placeholder="可在此輸入維修備註"></textarea>
+			</div>
 			<div class="form_btn py-1 px-3 fixed_bottom">
 				<div class="row">
 					<div class="col-6 col-sm-6 text-left">

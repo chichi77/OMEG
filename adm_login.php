@@ -44,7 +44,7 @@ $(function(){
 					<label for="acc">帳號</label>
 				</div>
 				<div class="col-8 col-sm-8">
-					<input type="text" id="acc" name="acc" class="required form-control" placeholder="請輸入手機號碼">
+					<input type="text" id="acc" name="acc" class="required form-control" placeholder="請輸入工務帳號">
 				</div>
 			</div>
 			<div class="row">
@@ -53,7 +53,7 @@ $(function(){
 					<label for="pad">密碼</label>
 				</div>
 				<div class="col-8 col-sm-8">
-					<input type="password" id="psd" name="psd" class="required form-control" maxlength="20" minlength="8" placeholder="請輸入工務帳號">
+					<input type="password" id="psd" name="psd" class="required form-control" maxlength="20" minlength="8" placeholder="請輸入工務密碼">
 				</div>
 			</div>
 			<div class="row">
