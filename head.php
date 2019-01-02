@@ -16,6 +16,7 @@ $description="OMEG";
 <script src="dist/js/css3-mediaqueries.js"></script>
 <![endif]-->
 <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 

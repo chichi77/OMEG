@@ -1,6 +1,6 @@
 var $data_notify_default = "Can not be empty!",
 	$data_notify_mail = "Please enter the correct e-mail.",
-	$data_notify_pass = "Please check the password.";
+	$data_notify_pass = "請確認密碼";
 function check_submit(object) //FORM_CHECK
 {
 	var reEmail = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/; 
@@ -10,7 +10,7 @@ function check_submit(object) //FORM_CHECK
 			if($(this).attr("data-notify")){
 				$(this).after("<span class='notify'>"+$(this).attr("data-notify")+"</span>");
 			}else{
-				$(this).after("<span class='notify'>"+$data_notify_default+"</span>");
+				//$(this).after("<span class='notify'>"+$data_notify_default+"</span>");
 			}
 		}else if($(this).hasClass("mail_check")){ //E-mail Check
 			if($(this).val().search(reEmail) == "-1"){
@@ -46,12 +46,11 @@ function check_submit(object) //FORM_CHECK
 					$(this).next(".notify").remove();
 				}
 			}
-			
 		}else{
 			$(this).removeClass("invalid");
 			$(this).next(".notify").remove();
 		}
-    });
+   });
 	
 	if (object.find("*").hasClass("invalid")){
 		return false;

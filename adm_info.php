@@ -13,6 +13,17 @@
 <meta name="copyright" content="<?php echo $copyright; ?>">
 <meta name="description" content="<?php echo $description; ?>">
 </head>
+<script src="dist/js/input_check.js"></script>
+<script>
+$(function(){
+	$('.postForm').submit(function(event) {
+		if(!check_submit($(this))){
+			alert('請確認必填欄位！');
+			return false;
+		}
+	});
+})
+</script>
 <body>
 <header>
 	<?php include("header.php"); ?>
