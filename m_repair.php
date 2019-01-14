@@ -22,7 +22,7 @@
 		<?php include("m_menu.php"); ?>
 		<div class="row no-gutters state_menu text-center">
 			<div class="col-3 col-sm-3" data-type="0">未確認</div>
-			<div class="col-3 col-sm-3" data-type="1">施工中</div>
+			<div class="col-3 col-sm-3" data-type="1">派工中</div>
 			<div class="col-3 col-sm-3" data-type="2">檢修中</div>
 			<div class="col-3 col-sm-3" data-type="3">已完工</div>
 		</div>
@@ -33,9 +33,6 @@
 					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
-					<div class="state_bar">
-						<div></div>
-					</div>
 					<div class="state_txt text-secondary">未處理</div>
 				</li>
 				<li>
@@ -59,10 +56,7 @@
 					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
-					<div class="state_bar green">
-						<div style="width:76%"></div>
-					</div>
-					<div class="state_txt text-success">施工中　維修進度76%</div>
+					<div class="state_txt text-success">派工中</div>
 					<div class="text-secondary">維修排程：2018/11/05~2018/11/15</div>
 				</li>
 				<li>
@@ -86,10 +80,7 @@
 					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
-					<div class="state_bar green">
-						<div style="width:76%"></div>
-					</div>
-					<div class="state_txt text-success">施工中　維修進度76%</div>
+					<div class="state_txt text-success">派工中</div>
 					<div class="text-secondary">維修排程：2018/11/05~2018/11/15</div>
 				</li>
 				<li>
@@ -111,10 +102,7 @@
 					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
-					<div class="state_bar green">
-						<div style="width:76%"></div>
-					</div>
-					<div class="state_txt text-success">檢修中　維修進度76%</div>
+					<div class="state_txt text-success">檢修中</div>
 					<div class="text-secondary">維修排程：2018/11/05~2018/11/15</div>
 				</li>
 				<li>
@@ -136,10 +124,7 @@
 					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
-					<div class="state_bar green">
-						<div style="width:76%"></div>
-					</div>
-					<div class="state_txt text-success">檢修中　維修進度76%</div>
+					<div class="state_txt text-success">檢修中</div>
 					<div class="text-secondary">維修排程：2018/11/05~2018/11/15</div>
 				</li>
 				<li>
@@ -161,9 +146,6 @@
 					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
-					<div class="state_bar blue">
-						<div></div>
-					</div>
 					<div class="state_txt text-primary">已完成</div>
 				</li>
 				<li>

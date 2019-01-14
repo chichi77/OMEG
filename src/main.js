@@ -21,7 +21,7 @@ $(function(){
 			$('.m_menu > div').eq(3).addClass('active');
 		}
 	}
-	else if ($('.adm_menu').length) {
+	else if (location.pathname.indexOf('adm_')) {
 		if(page.indexOf('repair')!=-1){
 			$('.adm_menu > div').eq(0).addClass('active');
 			$('.state_menu > div:nth-child(1), .case_wrapper .item[data-type="0"]').addClass('active');

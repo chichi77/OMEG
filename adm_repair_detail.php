@@ -27,10 +27,7 @@
 					<span class="text-secondary px-2">編號：20181101164532</span>
 				</li>
 				<li class="state">
-					<div class="state_bar green">
-						<div style="width:76%"></div>
-					</div>
-					<div class="state_txt text-success">施工中　維修進度76%</div>
+					<div class="state_txt text-success">派工中</div>
 				</li>
 			</ul>
 		</div>
@@ -47,21 +44,12 @@
 			</div>
 			<div class="row no-gutters">
 				<div class="col-4 col-sm-4">
-					<label class="col-form-label" for="progress">進度</label>
-				</div>
-				<div class="col-8 col-sm-8 d-flex">
-					<input type="number" max="100" min="0" class="form-control" name="progress" id="progress" value="76">
-					<span class="px-2 text-dark">%</span>
-				</div>
-			</div>
-			<div class="row no-gutters">
-				<div class="col-4 col-sm-4">
 					<label class="col-form-label" for="state">狀態</label>
 				</div>
 				<div class="col-8 col-sm-8">
 					<select name="state" class="form-control">
 						<option value="0">未確認</option>
-						<option value="1" checked>施工中</option>
+						<option value="1" checked>派工中</option>
 						<option value="2">檢修中</option>
 						<option value="3">已完成</option>
 					</select>
